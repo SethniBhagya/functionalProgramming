@@ -19,20 +19,20 @@ object PrimeNo extends App{
 
    }
 
-   def printsequeance(x:Int,y:Int){
+   def primeSeq(x:Int,y:Int){
     if (x==y){
         break;
     }
     if(prime(y,2)){
         println(y);
     }
-    printsequeance(x,y+1);
+    primeSeq(x,y+1);
    }
 
 
   print("Enter a Number: ");
   var z=readInt();
 
-  printsequeance(z,2);
+  primeSeq(z,2);
 
 }
